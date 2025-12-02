@@ -1,8 +1,15 @@
-module Days.Day1
- ( part1
- , part2
- )
-where
+module Days.Day1 (Day1(..)) where
+
+import Days.Solver
+
+data Day1 = Day1
+
+instance Solver Day1 where
+  day Day1 = 1
+
+  -- solve each part
+  part1 Day1 = countZeroes (50, 0) . map parseRotation
+  part2 Day1 = countWraps (50, 0) . map parseRotation
 
 parseRotation :: String -> Integer
 parseRotation ('L':n) = negate $ read n
@@ -24,9 +31,3 @@ countWraps (dial, count) (x:xs) = countWraps (nextDial, nextCount) xs
     nextCount = count + abs q + (if wraps then 1 else 0)
     wraps = dial /= 0 && (dial + r < 1 || dial + r > 99)
     (q, r) = quotRem x 100
-
-part1 :: [String] -> Integer
-part1 d = countZeroes (50, 0) [parseRotation line | line <- d]
-
-part2 :: [String] -> Integer
-part2 d = countWraps (50, 0) [parseRotation line | line <- d]
