@@ -28,6 +28,7 @@ library
       Days.Day1
       Days.Day2
       Days.Day3
+      Days.Day4
       Days.Solver
   other-modules:
       Paths_advent2025

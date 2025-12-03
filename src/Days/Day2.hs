@@ -10,7 +10,7 @@ instance Solver Day2 where
   day Day2 = 2
 
   -- solve each part
-  part1 Day2  = sum . concatMap simpleInvalidIDs . parseRanges . concat
+  part1 Day2 = sum . concatMap simpleInvalidIDs . parseRanges . concat
   part2 Day2 = sum . concatMap invalidIDs . parseRanges . concat
 
 parseRanges :: String -> [[Integer]]
