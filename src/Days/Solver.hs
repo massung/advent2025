@@ -9,9 +9,7 @@ where
 import Data.String
 import Prelude hiding (Day)
 
-data Mode
-  = Test
-  | Real
+data Mode = Test | Real
 
 rootPath :: FilePath
 rootPath = "/Users/jeff/Developer/Advent/advent2025"

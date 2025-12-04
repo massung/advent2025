@@ -7,6 +7,7 @@ import Days.Day1
 import Days.Day2
 import Days.Day3
 import Days.Day4
+import Days.Day5
 import Days.Solver
 
 data Solveable where
@@ -17,7 +18,8 @@ days =
   [ Solveable Day1,
     Solveable Day2,
     Solveable Day3,
-    Solveable Day4
+    Solveable Day4,
+    Solveable Day5
   ]
 
 _allSolutions :: IO ()
@@ -29,5 +31,5 @@ _allSolutions = forM_ days solveDay
 
 main :: IO ()
 main = do
-  solve Day4 part1 Test >>= print
-  solve Day4 part2 Test >>= print
+  solve Day4 part1 Real >>= print
+  solve Day4 part2 Real >>= print
