@@ -4,7 +4,7 @@ import Data.List.Split (splitWhen)
 import Data.List.Extra
 import Days.Solver
 
-data Day2 = Day2
+data Day2 = Day2 deriving(Show)
 
 instance Solver Day2 where
   day Day2 = 2

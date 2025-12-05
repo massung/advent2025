@@ -2,7 +2,7 @@ module Days.Day1 (Day1(..)) where
 
 import Days.Solver
 
-data Day1 = Day1
+data Day1 = Day1 deriving(Show)
 
 instance Solver Day1 where
   day Day1 = 1

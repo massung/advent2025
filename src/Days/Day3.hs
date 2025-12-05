@@ -3,7 +3,7 @@ module Days.Day3 (Day3(..)) where
 import Data.List.Extra
 import Days.Solver
 
-data Day3 = Day3
+data Day3 = Day3 deriving(Show)
 
 instance Solver Day3 where
   day Day3 = 3

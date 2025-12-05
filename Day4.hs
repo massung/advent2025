@@ -4,7 +4,7 @@ import Data.List as L
 import Data.Map.Strict as M
 import Days.Solver
 
-data Day4 = Day4 deriving(Show)
+data Day4 = Day4
 
 instance Solver Day4 where
   day Day4 = 4
