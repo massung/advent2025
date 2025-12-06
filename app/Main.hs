@@ -9,6 +9,7 @@ import Days.Day3
 import Days.Day4
 import Days.Day5
 import Days.Day6
+import Days.Day7
 import Days.Solver
 
 data Solveable where
@@ -21,7 +22,8 @@ days =
     Solveable Day3,
     Solveable Day4,
     Solveable Day5,
-    Solveable Day6
+    Solveable Day6,
+    Solveable Day7
   ]
 
 main :: IO ()
